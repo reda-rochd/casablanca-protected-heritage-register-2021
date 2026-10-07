@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 Reda Rochd
 """Extract the Casablanca entries from the official Dec 2021 heritage-register DOC.
 
 Requires LibreOffice/soffice and BeautifulSoup 4. The source DOC is converted to

@@ -9,6 +9,7 @@ Counts follow the source year and source-category labels. This is a row count fr
 ## Files
 
 - [Download the CSV](data/casablanca-protected-heritage-register-2021-casablanca-109.csv) — 109 Casablanca rows extracted from the source register. Arabic source values are preserved.
+- [Year-count chart](casablanca-register-counts-by-source-year.svg) — a source-labeled visualization of the register row counts.
 - [Reproducible extractor](src/build_casablanca_heritage_csv.py) — requires Python 3, BeautifulSoup 4, and LibreOffice (`soffice`).
 - Download the original Word document from the official source resource before reproducing; this repository does not mirror the source document.
 
@@ -21,7 +22,7 @@ Prepared by Reda Rochd, who works with [MarocTours](https://maroctours.ru/), a c
 - Source portal: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945>
 - Source resource: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945/resource/913f28ef-3b82-48e7-b459-ccd1283c6e62>
 - Reference date: December 2021, as stated in the register. This is not a current-status inventory.
-- The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract retains that attribution and is released under ODbL as well. The extraction script is MIT-licensed (see `LICENSE-CODE.md`). The extracted data remains under ODbL. See <https://opendatacommons.org/licenses/odbl/1-0/>.
+- The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract and its row-count visualization retain that attribution and are released under ODbL as well. The extractor source code alone is licensed under MIT below; the extracted data remains under ODbL. See <https://opendatacommons.org/licenses/odbl/1-0/>.
 
 ## Extraction and validation
 
@@ -53,3 +54,15 @@ These are counts of extracted rows by the source column `السنة` (rendered i
 ## Limitations
 
 This extract contains the source's names, protection-category labels, references, and years. It contains no coordinates, access information, condition survey, architectural classification, or confirmation that any place can be visited. Do not treat an entry as a unique tourist attraction or as proof of current legal status. Consult the cited decisions and current official sources for legal or access questions.
+
+## Extractor code license (MIT)
+
+This license applies only to `src/build_casablanca_heritage_csv.py` and its associated documentation. It does not change the ODbL terms for the extracted dataset or the chart.
+
+Copyright (c) 2026 Reda Rochd
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

@@ -32,6 +32,19 @@ The source is a Word document. The script converts it to HTML using LibreOffice 
 
 The 109 output rows reconcile exactly with the source's own Casablanca totals: 2 rows marked `الترتيب` and 107 marked `التقييد`. No names or legal-category labels are translated or normalized. The categories' legal effects have not been independently interpreted.
 
+## CSV field dictionary
+
+| Field | Meaning |
+|---|---|
+| `official_gazette_reference_ar` | Official Gazette reference, transcribed in Arabic as printed in the source. |
+| `protection_decision_reference_ar` | Ministerial or administrative decision reference, transcribed in Arabic as printed in the source. |
+| `protection_category_ar` | Original Arabic category label (`الترتيب` or `التقييد`); legal effects are not interpreted here. |
+| `protected_site_name_as_published_ar` | Name/description of the entry exactly as published in Arabic, including mixed-script text where present. |
+| `decision_year_as_published` | Year value from the source table; not independently verified as a legal effective date. |
+| `province_as_published_ar` | Province/administrative place value from the source table, in Arabic. |
+| `source_table_index` | Zero-based table number in the source Word document after conversion for extraction. |
+| `source_row_index` | Zero-based row index within that source table; supports checking the extraction against the document. |
+
 ## Counts by year as shown in the source
 
 These are counts of extracted rows by the source column `السنة` (rendered in the CSV as `decision_year_as_published`). They are not independently verified dates of legal effect.

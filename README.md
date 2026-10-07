@@ -2,14 +2,14 @@
 
 ## Quick visual overview
 
-![Counts of Casablanca register rows by source year](casablanca-register-counts-by-source-year.svg)
+![Counts of Casablanca register rows by source year](casablanca-register-counts-by-source-year-v2.svg)
 
 Counts follow the source year and source-category labels. This is a row count from the December 2021 register, not a count of unique places or current legal status.
 
 ## Files
 
 - [Download the CSV](data/casablanca-protected-heritage-register-2021-casablanca-109.csv) — 109 Casablanca rows extracted from the source register. Arabic source values are preserved.
-- [Year-count chart](casablanca-register-counts-by-source-year.svg) — a source-labeled visualization of the register row counts.
+- [Year-count chart](casablanca-register-counts-by-source-year-v2.svg) — a source-labeled visualization of the register row counts.
 - [Reproducible extractor](src/build_casablanca_heritage_csv.py) — requires Python 3, BeautifulSoup 4, and LibreOffice (`soffice`).
 - Download the original Word document from the official source resource before reproducing; this repository does not mirror the source document.
 

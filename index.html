@@ -1,0 +1,114 @@
+<!-- SPDX-License-Identifier: MIT
+Copyright (c) 2026 Reda Rochd
+See the repository README for full license terms and the separate ODbL data license. -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explorer les 109 lignes de Casablanca dans le registre patrimonial marocain de décembre 2021, avec les références de la source et un téléchargement CSV.">
+  <title>Registre patrimonial de Casablanca — données de décembre 2021</title>
+  <style>
+    :root { color-scheme: light; --ink:#182230; --muted:#536273; --line:#d7dee8; --blue:#2563eb; --orange:#c45b0c; --wash:#f4f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; color:var(--ink); background:#fff; }
+    header, main, footer { width:min(1120px, calc(100% - 32px)); margin-inline:auto; }
+    header { padding:2.5rem 0 1.4rem; }
+    h1 { font-size:clamp(1.8rem,4vw,2.8rem); line-height:1.14; margin:0 0 .75rem; }
+    h2 { font-size:1.25rem; margin:0 0 .65rem; }
+    p { margin:.45rem 0 1rem; }
+    .lede { max-width:78ch; color:var(--muted); font-size:1.05rem; }
+    .notice { margin:1.25rem 0; border-left:4px solid #d97706; background:#fff8e8; padding:.8rem 1rem; max-width:92ch; }
+    .links { display:flex; gap:.75rem 1.2rem; flex-wrap:wrap; }
+    a { color:#1455b8; }
+    .stats { display:flex; flex-wrap:wrap; gap:.6rem; margin:1.1rem 0 1.5rem; }
+    .stat { background:var(--wash); border:1px solid var(--line); border-radius:.55rem; padding:.55rem .8rem; }
+    .controls { display:grid; grid-template-columns:minmax(240px,2fr) repeat(2,minmax(170px,1fr)); gap:.8rem; margin:1.1rem 0; }
+    label { display:grid; gap:.28rem; font-size:.9rem; font-weight:650; }
+    input,select,button { min-height:44px; border:1px solid #8b98a8; border-radius:.35rem; background:#fff; color:var(--ink); font:inherit; padding:.5rem .65rem; }
+    :focus-visible { outline:3px solid #f59e0b; outline-offset:2px; }
+    .table-wrap { overflow:auto; border:1px solid var(--line); border-radius:.5rem; }
+    table { width:100%; border-collapse:collapse; min-width:790px; }
+    th,td { text-align:left; vertical-align:top; padding:.7rem .75rem; border-bottom:1px solid var(--line); }
+    th { background:var(--wash); position:sticky; top:0; z-index:1; }
+    td.ar { direction:rtl; text-align:right; unicode-bidi:plaintext; font-size:1.06rem; }
+    details summary { color:#1455b8; cursor:pointer; }
+    details p { max-width:58ch; overflow-wrap:anywhere; font-size:.92rem; }
+    .category { direction:rtl; unicode-bidi:plaintext; white-space:nowrap; }
+    .result { color:var(--muted); min-height:1.6em; }
+    .empty { padding:1rem; text-align:center; color:var(--muted); }
+    figure { margin:1.5rem 0; padding:1rem; border:1px solid var(--line); border-radius:.5rem; }
+    figure img { display:block; width:min(100%,820px); height:auto; margin:auto; }
+    footer { border-top:1px solid var(--line); margin-top:2.5rem; padding:1.5rem 0 2.5rem; color:var(--muted); font-size:.92rem; }
+    @media(max-width:720px) { .controls { grid-template-columns:1fr; } header { padding-top:1.5rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Registre patrimonial de Casablanca</h1>
+    <p class="lede">Explorer les lignes concernant la préfecture de Casablanca dans le registre régional publié par le Ministère de la Jeunesse, de la Culture et de la Communication — instantané arrêté à décembre 2021.</p>
+    <div class="notice"><strong>À lire avec précaution :</strong> 109 lignes ne signifient pas 109 lieux uniques ou visitables. Cette extraction ne confirme ni l’état juridique actuel, ni l’état de conservation, ni l’accès au public. Les désignations et catégories arabes sont conservées telles qu’elles figurent dans la source ; leurs effets juridiques ne sont pas interprétés ici.</div>
+    <div class="links">
+      <a href="https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945">Jeu de données officiel</a>
+      <a href="https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945/resource/913f28ef-3b82-48e7-b459-ccd1283c6e62">Fichier Word source</a>
+      <a href="data/casablanca-protected-heritage-register-2021-casablanca-109.csv" download>Télécharger le CSV</a>
+      <a href="https://github.com/reda-rochd/casablanca-protected-heritage-register-2021/releases/tag/v1.0.0">Version archivée v1.0.0</a>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="counts-title">
+      <h2 id="counts-title">Ce que contient l’instantané</h2>
+      <div class="stats" id="stats" aria-live="polite"><span class="stat">Chargement des lignes…</span></div>
+      <figure>
+        <figcaption><strong>Nombre de lignes par année indiquée dans la source</strong><br><span class="result">Ces années sont reprises du tableau ; elles ne sont pas vérifiées ici comme dates d’effet juridique.</span></figcaption>
+        <img src="casablanca-register-counts-by-source-year-v2.svg" alt="Graphique des lignes du registre par année et catégorie arabe d’origine">
+      </figure>
+    </section>
+    <section aria-labelledby="table-title">
+      <h2 id="table-title">Rechercher les entrées</h2>
+      <div class="controls">
+        <label for="q">Recherche (arabe, référence, année)<input id="q" type="search" autocomplete="off" placeholder="Saisir un nom ou une référence"></label>
+        <label for="year">Année publiée<select id="year"><option value="">Toutes les années</option></select></label>
+        <label for="category">Catégorie de la source<select id="category"><option value="">Toutes les catégories</option></select></label>
+      </div>
+      <p class="result" id="result" aria-live="polite">Chargement…</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th scope="col">Nom tel que publié (arabe)</th><th scope="col">Année</th><th scope="col">Catégorie</th><th scope="col">Références officielles</th></tr></thead>
+          <tbody id="rows"><tr><td colspan="4" class="empty">Chargement des données…</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><strong>Source et méthode.</strong> Le Ministère indique que le document couvre les sites et bâtiments historiques de la région Casablanca-Settat à fin décembre 2021. Cette extraction CSV reprend 109 lignes de Casablanca et conserve les valeurs arabes, les références et les indices de ligne/table source. Les 109 lignes se rapprochent du total imprimé dans le registre : 2 entrées « الترتيب » et 107 « التقييد ».</p>
+    <p><strong>Licence.</strong> Le jeu de données adapté et le graphique sont mis à disposition sous ODbL 1.0, avec attribution au Ministère et au portail marocain des données ouvertes. Le code de cette interface est sous MIT ; voir la notice du projet.</p>
+    <p><strong>Transparence.</strong> Préparé par Reda Rochd, qui travaille avec MarocTours, opérateur commercial à Casablanca. Ce projet indépendant ne constitue ni une publication ni une approbation du Ministère et ne fait la promotion d’aucune visite. L’extraction n’est pas un avis juridique ni une expertise patrimoniale.</p>
+    <p><a href="https://opendatacommons.org/licenses/odbl/1-0/">Texte ODbL 1.0</a> · <a href="https://github.com/reda-rochd/casablanca-protected-heritage-register-2021">Code, données et méthode</a> · Aucune analytique ni traceur tiers sur cette page.</p>
+  </footer>
+  <script>
+    const fields = ["official_gazette_reference_ar", "protection_decision_reference_ar", "protection_category_ar", "protected_site_name_as_published_ar", "decision_year_as_published", "province_as_published_ar", "source_table_index", "source_row_index"];
+    const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    const q = document.querySelector("#q"), year = document.querySelector("#year"), category = document.querySelector("#category"), body = document.querySelector("#rows");
+    let data = [];
+    function draw() {
+      const query = q.value.trim().toLocaleLowerCase();
+      const filtered = data.filter(row => (!year.value || row.decision_year_as_published === year.value) && (!category.value || row.protection_category_ar === category.value) && (!query || fields.some(key => String(row[key] ?? "").toLocaleLowerCase().includes(query))));
+      document.querySelector("#result").textContent = `${filtered.length} ligne${filtered.length === 1 ? "" : "s"} affichée${filtered.length === 1 ? "" : "s"} sur ${data.length}.`;
+      body.innerHTML = filtered.length ? filtered.map(row => `<tr><td class="ar" lang="ar" dir="rtl">${escapeHtml(row.protected_site_name_as_published_ar)}</td><td>${escapeHtml(row.decision_year_as_published)}</td><td class="category" lang="ar" dir="rtl">${escapeHtml(row.protection_category_ar)}</td><td><details><summary>Voir les références</summary><p><strong>Bulletin officiel :</strong><br><span lang="ar" dir="rtl">${escapeHtml(row.official_gazette_reference_ar)}</span></p><p><strong>Décision :</strong><br><span lang="ar" dir="rtl">${escapeHtml(row.protection_decision_reference_ar)}</span></p><p><small>Table source ${escapeHtml(row.source_table_index)}, ligne ${escapeHtml(row.source_row_index)}.</small></p></details></td></tr>`).join("") : '<tr><td colspan="4" class="empty">Aucune entrée ne correspond à ces filtres.</td></tr>';
+    }
+    fetch("data/register.json").then(response => { if (!response.ok) throw new Error("Données indisponibles"); return response.json(); }).then(rows => {
+      data = rows;
+      const years = [...new Set(data.map(row => row.decision_year_as_published))].sort((a,b) => Number(a)-Number(b));
+      const categories = [...new Set(data.map(row => row.protection_category_ar))];
+      for (const value of years) year.add(new Option(value, value));
+      for (const value of categories) category.add(new Option(value, value));
+      const counts = Object.fromEntries(categories.map(value => [value, data.filter(row => row.protection_category_ar === value).length]));
+      document.querySelector("#stats").innerHTML = `<span class="stat"><strong>${data.length}</strong> lignes de Casablanca</span>` + categories.map(value => `<span class="stat"><strong>${counts[value]}</strong> <span class="category" lang="ar" dir="rtl">${escapeHtml(value)}</span></span>`).join("") + `<span class="stat">${years.length} années indiquées dans la source</span>`;
+      draw();
+    }).catch(() => { document.querySelector("#result").textContent = "Impossible de charger les données. Vous pouvez télécharger le CSV."; body.innerHTML = '<tr><td colspan="4" class="empty">Données indisponibles. Consultez le CSV ou le dépôt public.</td></tr>'; });
+    [q, year, category].forEach(control => control.addEventListener("input", draw));
+    [year, category].forEach(control => control.addEventListener("change", draw));
+  </script>
+</body>
+</html>

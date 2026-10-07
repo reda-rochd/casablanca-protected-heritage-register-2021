@@ -8,6 +8,7 @@ Counts follow the source year and source-category labels. This is a row count fr
 
 ## Files
 
+- [Search the 109 source rows](https://reda-rochd.github.io/casablanca-protected-heritage-register-2021/) — filter the published names, year and source category, and inspect each record's official references.
 - [Download the CSV](data/casablanca-protected-heritage-register-2021-casablanca-109.csv) — 109 Casablanca rows extracted from the source register. Arabic source values are preserved.
 - [Year-count chart](casablanca-register-counts-by-source-year-v2.svg) — a source-labeled visualization of the register row counts.
 - [Reproducible extractor](src/build_casablanca_heritage_csv.py) — requires Python 3, BeautifulSoup 4, and LibreOffice (`soffice`).
@@ -22,7 +23,7 @@ Prepared by Reda Rochd, who works with [MarocTours](https://maroctours.ru/), a c
 - Source portal: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945>
 - Source resource: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945/resource/913f28ef-3b82-48e7-b459-ccd1283c6e62>
 - Reference date: December 2021, as stated in the register. This is not a current-status inventory.
-- The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract and its row-count visualization retain that attribution and are released under ODbL as well. The extractor source code alone is licensed under MIT below; the extracted data remains under ODbL. See <https://opendatacommons.org/licenses/odbl/1-0/>.
+- The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract, its row-count visualization, and the machine-readable JSON copy retain that attribution and are released under ODbL as well. The extractor and search-page code are licensed under MIT below; the extracted data remains under ODbL. See <https://opendatacommons.org/licenses/odbl/1-0/>.
 
 ## Extraction and validation
 
@@ -57,7 +58,7 @@ This extract contains the source's names, protection-category labels, references
 
 ## Extractor code license (MIT)
 
-This license applies only to `src/build_casablanca_heritage_csv.py` and its associated documentation. It does not change the ODbL terms for the extracted dataset or the chart.
+This license applies only to `src/build_casablanca_heritage_csv.py`, `index.html`, and their associated code documentation. It does not change the ODbL terms for the extracted dataset or the chart.
 
 Copyright (c) 2026 Reda Rochd
 

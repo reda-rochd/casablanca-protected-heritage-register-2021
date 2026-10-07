@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc">
+<title id="title">Casablanca register rows by year as published</title>
+<desc id="desc">Horizontal grouped bars for source categories الترتيب and التقييد. This counts rows in a December 2021 register and does not indicate current status or legal effect.</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="220" y="42" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#182230">Casablanca register rows by source year</text>
+<text x="220" y="70" font-family="Arial,sans-serif" font-size="15" fill="#536273">Counts of extracted rows; December 2021 source snapshot</text>
+<rect x="220" y="82" width="16" height="16" rx="2" fill="#2563eb"/>
+<text x="244" y="95" font-family="Arial,sans-serif" font-size="14" fill="#182230">الترتيب (source)</text>
+<rect x="410" y="82" width="16" height="16" rx="2" fill="#e87924"/>
+<text x="434" y="95" font-family="Arial,sans-serif" font-size="14" fill="#182230">التقييد (source)</text>
+<line x1="220.0" y1="100" x2="220.0" y2="842" stroke="#d7dee8"/>
+<text x="220.0" y="866" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">0</text>
+<line x1="352.0" y1="100" x2="352.0" y2="842" stroke="#d7dee8"/>
+<text x="352.0" y="866" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">5</text>
+<line x1="484.0" y1="100" x2="484.0" y2="842" stroke="#d7dee8"/>
+<text x="484.0" y="866" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">10</text>
+<line x1="616.0" y1="100" x2="616.0" y2="842" stroke="#d7dee8"/>
+<text x="616.0" y="866" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">15</text>
+<line x1="748.0" y1="100" x2="748.0" y2="842" stroke="#d7dee8"/>
+<text x="748.0" y="866" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">20</text>
+<line x1="880.0" y1="100" x2="880.0" y2="842" stroke="#d7dee8"/>
+<text x="880.0" y="866" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">25</text>
+<text x="202" y="125" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">1942</text>
+<rect x="220" y="100" width="26.4" height="22" rx="3" fill="#2563eb"/>
+<text x="253.4" y="116" font-family="Arial,sans-serif" font-size="13" fill="#182230">1</text>
+<rect x="220" y="124" width="0.0" height="22" rx="3" fill="#e87924"/>
+<text x="227.0" y="140" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<text x="202" y="183" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">1951</text>
+<rect x="220" y="158" width="26.4" height="22" rx="3" fill="#2563eb"/>
+<text x="253.4" y="174" font-family="Arial,sans-serif" font-size="13" fill="#182230">1</text>
+<rect x="220" y="182" width="0.0" height="22" rx="3" fill="#e87924"/>
+<text x="227.0" y="198" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<text x="202" y="241" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2000</text>
+<rect x="220" y="216" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="232" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="240" width="26.4" height="22" rx="3" fill="#e87924"/>
+<text x="253.4" y="256" font-family="Arial,sans-serif" font-size="13" fill="#182230">1</text>
+<text x="202" y="299" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2003</text>
+<rect x="220" y="274" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="290" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="298" width="633.6" height="22" rx="3" fill="#e87924"/>
+<text x="860.6" y="314" font-family="Arial,sans-serif" font-size="13" fill="#182230">24</text>
+<text x="202" y="357" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2004</text>
+<rect x="220" y="332" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="348" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="356" width="448.8" height="22" rx="3" fill="#e87924"/>
+<text x="675.8" y="372" font-family="Arial,sans-serif" font-size="13" fill="#182230">17</text>
+<text x="202" y="415" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2005</text>
+<rect x="220" y="390" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="406" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="414" width="105.6" height="22" rx="3" fill="#e87924"/>
+<text x="332.6" y="430" font-family="Arial,sans-serif" font-size="13" fill="#182230">4</text>
+<text x="202" y="473" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2006</text>
+<rect x="220" y="448" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="464" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="472" width="52.8" height="22" rx="3" fill="#e87924"/>
+<text x="279.8" y="488" font-family="Arial,sans-serif" font-size="13" fill="#182230">2</text>
+<text x="202" y="531" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2011</text>
+<rect x="220" y="506" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="522" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="530" width="79.2" height="22" rx="3" fill="#e87924"/>
+<text x="306.2" y="546" font-family="Arial,sans-serif" font-size="13" fill="#182230">3</text>
+<text x="202" y="589" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2012</text>
+<rect x="220" y="564" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="580" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="588" width="132.0" height="22" rx="3" fill="#e87924"/>
+<text x="359.0" y="604" font-family="Arial,sans-serif" font-size="13" fill="#182230">5</text>
+<text x="202" y="647" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2013</text>
+<rect x="220" y="622" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="638" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="646" width="132.0" height="22" rx="3" fill="#e87924"/>
+<text x="359.0" y="662" font-family="Arial,sans-serif" font-size="13" fill="#182230">5</text>
+<text x="202" y="705" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2014</text>
+<rect x="220" y="680" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="696" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="704" width="528.0" height="22" rx="3" fill="#e87924"/>
+<text x="755.0" y="720" font-family="Arial,sans-serif" font-size="13" fill="#182230">20</text>
+<text x="202" y="763" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2015</text>
+<rect x="220" y="738" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="754" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="762" width="132.0" height="22" rx="3" fill="#e87924"/>
+<text x="359.0" y="778" font-family="Arial,sans-serif" font-size="13" fill="#182230">5</text>
+<text x="202" y="821" text-anchor="end" font-family="Arial,sans-serif" font-size="15" fill="#182230">2018</text>
+<rect x="220" y="796" width="0.0" height="22" rx="3" fill="#2563eb"/>
+<text x="227.0" y="812" font-family="Arial,sans-serif" font-size="13" fill="#182230">0</text>
+<rect x="220" y="820" width="554.4" height="22" rx="3" fill="#e87924"/>
+<text x="781.4" y="836" font-family="Arial,sans-serif" font-size="13" fill="#182230">21</text>
+<text x="550.0" y="586" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" fill="#536273">Number of rows</text>
+<text x="220" y="560" font-family="Arial,sans-serif" font-size="12" fill="#536273">Not a count of unique places; no inference about legal effect, visitor access, or current status.</text>
+</svg>

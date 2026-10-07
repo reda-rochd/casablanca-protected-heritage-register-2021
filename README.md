@@ -1,5 +1,11 @@
 # Casablanca protected-heritage register (December 2021): 109 source rows
 
+## Quick visual overview
+
+![Counts of Casablanca register rows by source year](casablanca-register-counts-by-source-year.svg)
+
+Counts follow the source year and source-category labels. This is a row count from the December 2021 register, not a count of unique places or current legal status.
+
 ## Files
 
 - [Download the CSV](data/casablanca-protected-heritage-register-2021-casablanca-109.csv) — 109 Casablanca rows extracted from the source register. Arabic source values are preserved.

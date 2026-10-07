@@ -2,8 +2,8 @@
 
 ## Files
 
-- `casablanca-protected-heritage-register-2021-casablanca-109.csv` — 109 Casablanca rows extracted from the source register. Arabic source values are preserved.
-- `build_casablanca_heritage_csv.py` — reproducible extractor; requires Python 3, BeautifulSoup 4, and LibreOffice (`soffice`).
+- [Download the CSV](data/casablanca-protected-heritage-register-2021-casablanca-109.csv) — 109 Casablanca rows extracted from the source register. Arabic source values are preserved.
+- [Reproducible extractor](src/build_casablanca_heritage_csv.py) — requires Python 3, BeautifulSoup 4, and LibreOffice (`soffice`).
 - Download the original Word document from the official source resource before reproducing; this repository does not mirror the source document.
 
 ## Provenance and scope
@@ -15,7 +15,7 @@ Prepared by Reda Rochd, who works with [MarocTours](https://maroctours.ru/), a c
 - Source portal: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945>
 - Source resource: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945/resource/913f28ef-3b82-48e7-b459-ccd1283c6e62>
 - Reference date: December 2021, as stated in the register. This is not a current-status inventory.
-- The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract retains that attribution and is released under ODbL as well. The extraction script is MIT-licensed. See <https://opendatacommons.org/licenses/odbl/1-0/>.
+- The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract retains that attribution and is released under ODbL as well. The extraction script is MIT-licensed (see `LICENSE-CODE.md`). The extracted data remains under ODbL. See <https://opendatacommons.org/licenses/odbl/1-0/>.
 
 ## Extraction and validation
 

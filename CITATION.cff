@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the versioned release below and the official source listed in the README."
+type: dataset
+title: "Casablanca protected-heritage register (December 2021): 109 source rows"
+authors:
+  - family-names: Rochd
+    given-names: Reda
+version: 1.1.1
+date-released: 2026-10-07
+url: "https://github.com/reda-rochd/casablanca-protected-heritage-register-2021/releases/tag/v1.1.1"
+repository-code: "https://github.com/reda-rochd/casablanca-protected-heritage-register-2021"
+abstract: >-
+  Arabic-first CSV extract of the 109 Casablanca rows in the Ministry of Youth,
+  Culture and Communication's December 2021 Casablanca-Settat heritage register.
+  Preserves source names, categories, years, official references and source row
+  indexes. The extract does not establish unique site counts, current legal
+  status, conservation condition, coordinates, or visitor access.
+keywords:
+  - Casablanca
+  - Morocco
+  - cultural heritage
+  - open data
+  - ODbL
+notes: >-
+  Dataset and chart are released under ODbL 1.0. Extractor and explorer code
+  are licensed under MIT as scoped in the README. Cite the Ministry/portal
+  source as well as this adapted extract.

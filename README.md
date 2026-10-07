@@ -24,6 +24,7 @@ Prepared by Reda Rochd, who works with [MarocTours](https://maroctours.ru/), a c
 - Source resource: <https://data.gov.ma/data/fr/dataset/3ae1adac-b0d4-4cdf-9e11-34c482534945/resource/913f28ef-3b82-48e7-b459-ccd1283c6e62>
 - Reference date: December 2021, as stated in the register. This is not a current-status inventory.
 - The portal lists the dataset under the Open Data Commons Open Database License (ODbL). This adapted extract, its row-count visualization, and the machine-readable JSON copy retain that attribution and are released under ODbL as well. The extractor and search-page code are licensed under MIT below; the extracted data remains under ODbL. See <https://opendatacommons.org/licenses/odbl/1-0/>.
+- For a citable version, use [release v1.1.1](https://github.com/reda-rochd/casablanca-protected-heritage-register-2021/releases/tag/v1.1.1) and cite the official Ministry/portal source as well. GitHub's **Cite this repository** panel reads the included `CITATION.cff`; it does not provide a DOI.
 
 ## Extraction and validation
 
